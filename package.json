@@ -1,0 +1,11 @@
+{
+  "name": "bot-webhook",
+  "version": "1.0.0",
+  "description": "oh s*, here we go again!",
+  "main": "index.js",
+  "author": "dotdev",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
