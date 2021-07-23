@@ -6,7 +6,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 app.use(bodyParser.json());
 
-var data;
+var data = 'no posts yet';
 
 app.post('/', (req, res) => {
     console.log(req.body);
