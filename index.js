@@ -1,7 +1,8 @@
 const express = require('express');
+require('dotenv').config(); 
 
 const app = express();
-const PORT = 'https://challenge-take.herokuapp.com/';
+const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
     return res.json({"works":"true"});
@@ -12,6 +13,6 @@ app.post('/', (req, res) => {
     res.status(201).send('ok');
 });
 
-app.listen(PORT);
+app.listen(port, () => {console.log(`Running: ${port}`)});
 
 //now trying heroku
