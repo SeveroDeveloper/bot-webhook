@@ -1,7 +1,7 @@
 const express = require('express');
 
 const app = express();
-const port = 3000;
+const port = 'https://challenge-take.herokuapp.com/';
 
 app.get('/', (req, res) => {
     return res.json({"works":"true"});
