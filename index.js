@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-app.get('/start', (req, res) => {
+app.get('/', (req, res) => {
     return res.json({"works":"true"});
 });
 
