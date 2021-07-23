@@ -9,8 +9,8 @@ app.get('/', (req, res) => {
 });
 
 app.post('/', (req, res) => {
-    console.log(req.json());
-    res.status(200).send('ok');
+    console.log(req);
+    res.status(201).send('ok');
 });
 
 app.listen(port, () => {console.log(`Running: ${port}`)});
